@@ -1,0 +1,9 @@
+{
+ "id": "socio_M5",
+ "evaluado_en": "2026-11-10T15:47:38",
+ "usuario": "post_fase2_real",
+ "huella_particion": "f1815abeac5f7f304f55480cd3829ffdd9446b80b371da208d22bf44940b30e9",
+ "sha256_modelo": "5d7bcb7c79cf761f44764a508bf699deed47c062b3db7ccc3cb25c272c19a7c2",
+ "n_prueba": 4809,
+ "umbral_severa_validacion": 0.0656924694776535
+}

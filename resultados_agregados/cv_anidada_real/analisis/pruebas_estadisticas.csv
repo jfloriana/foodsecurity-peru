@@ -1,0 +1,124 @@
+escenario,prueba,comparacion,estadistico,p_valor,detalle,p_ajustado
+socio,delong_severa,M1-M2,1.5677124972537124,0.1169482437840917,AUC M1=0.764; M2=0.749,0.32973028933367
+socio,delong_severa,M1-M3,0.410018060709713,0.6817926989194316,AUC M1=0.764; M3=0.761,0.6817926989194316
+socio,delong_severa,M1-M4,-1.9188757983637248,0.0550000541601503,AUC M1=0.764; M4=0.774,0.2750002708007515
+socio,delong_severa,M1-M5,2.8844426534419987,0.0039210716623762,AUC M1=0.764; M5=0.733,0.0274475016366335
+socio,delong_severa,M2-M3,-1.877770170935097,0.0604126125494301,AUC M2=0.749; M3=0.761,0.2750002708007515
+socio,delong_severa,M2-M4,-3.3594126344954454,0.0007810834395193,AUC M2=0.749; M4=0.774,0.0070297509556744
+socio,delong_severa,M2-M5,1.5985973612308575,0.1099100964445566,AUC M2=0.749; M5=0.733,0.32973028933367
+socio,delong_severa,M3-M4,-2.320719341763396,0.0203019961384584,AUC M3=0.761; M4=0.774,0.1218119768307506
+socio,delong_severa,M3-M5,3.058594946582818,0.0022237759861773,AUC M3=0.761; M5=0.733,0.0177902078894187
+socio,delong_severa,M4-M5,4.248375826004796,2.153259443712328e-05,AUC M4=0.774; M5=0.733,0.0002153259443712
+socio,mcnemar,M1-M2,38.559559876924325,5.310799818783612e-10,b=193.7; c=337.8,3.717559873148529e-09
+socio,mcnemar,M1-M3,5.708746046313765,0.0168805931636644,b=160.2; c=206.9,0.0506417794909932
+socio,mcnemar,M1-M4,0.1387738657563536,0.7095030109324758,b=132.8; c=125.8,0.7690649321653991
+socio,mcnemar,M1-M5,41.27727611027057,1.3209563590155884e-10,b=241.4; c=405.8,1.0567650872124707e-09
+socio,mcnemar,M2-M3,24.187622033156792,8.739215276963306e-07,b=240.7; c=143.3,5.243529166177984e-06
+socio,mcnemar,M2-M4,42.743299724276575,6.241530460263473e-11,b=339.3; c=188.1,6.241530460263473e-10
+socio,mcnemar,M2-M5,0.7561614403919785,0.3845324660826995,b=235.8; c=256.1,0.7690649321653991
+socio,mcnemar,M3-M4,10.059107303529956,0.0015159666437614,b=165.3; c=111.5,0.0060638665750459
+socio,mcnemar,M3-M5,22.07523323369148,2.6217054664338896e-06,b=249.4; c=367.1,1.3108527332169448e-05
+socio,mcnemar,M4-M5,42.25766562100489,8.000580065249711e-11,b=258.0; c=429.4,7.20052205872474e-10
+socio,wilcoxon_pliegues,M1-M2,0.0,0.0625,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M1-M3,0.0,0.0625,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M1-M4,0.0,0.0625,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M1-M5,2.0,0.1875,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M2-M3,6.0,0.8125,n=5 pliegues; p mínimo posible=0.0625,0.8125
+socio,wilcoxon_pliegues,M2-M4,0.0,0.0625,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M2-M5,0.0,0.0625,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M3-M4,0.0,0.0625,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M3-M5,0.0,0.0625,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,wilcoxon_pliegues,M4-M5,1.0,0.125,n=5 pliegues; p mínimo posible=0.0625,0.625
+socio,friedman,global,17.120000000000005,0.0018318804472027,"rangos medios={'M1': np.float64(4.2), 'M2': np.float64(1.6), 'M3': np.float64(1.4), 'M4': np.float64(3.2), 'M5': np.float64(4.6)}",0.0018318804472027
+socio,nemenyi,M1-M2,,0.0703241278549434,,0.0703241278549434
+socio,nemenyi,M1-M3,,0.0408763401521059,,0.0408763401521059
+socio,nemenyi,M1-M4,,0.8554745643109434,,0.8554745643109434
+socio,nemenyi,M1-M5,,0.9946149695873464,,0.9946149695873464
+socio,nemenyi,M2-M3,,0.9996441964315064,,0.9996441964315064
+socio,nemenyi,M2-M4,,0.4973248097152458,,0.4973248097152458
+socio,nemenyi,M2-M5,,0.0226594140021955,,0.0226594140021955
+socio,nemenyi,M3-M4,,0.3734806214642936,,0.3734806214642936
+socio,nemenyi,M3-M5,,0.0119941378786613,,0.0119941378786613
+socio,nemenyi,M4-M5,,0.6276588981064819,,0.6276588981064819
+fies,delong_severa,M1-M2,0.0,1.0,AUC M1=1.000; M2=1.000,1.0
+fies,delong_severa,M1-M3,0.0,1.0,AUC M1=1.000; M3=1.000,1.0
+fies,delong_severa,M1-M4,0.0,1.0,AUC M1=1.000; M4=1.000,1.0
+fies,delong_severa,M1-M5,0.0,1.0,AUC M1=1.000; M5=1.000,1.0
+fies,delong_severa,M2-M3,0.0,1.0,AUC M2=1.000; M3=1.000,1.0
+fies,delong_severa,M2-M4,0.0,1.0,AUC M2=1.000; M4=1.000,1.0
+fies,delong_severa,M2-M5,0.0,1.0,AUC M2=1.000; M5=1.000,1.0
+fies,delong_severa,M3-M4,0.0,1.0,AUC M3=1.000; M4=1.000,1.0
+fies,delong_severa,M3-M5,0.0,1.0,AUC M3=1.000; M5=1.000,1.0
+fies,delong_severa,M4-M5,0.0,1.0,AUC M4=1.000; M5=1.000,1.0
+fies,mcnemar,M1-M2,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M1-M3,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M1-M4,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M1-M5,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M2-M3,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M2-M4,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M2-M5,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M3-M4,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M3-M5,0.0,1.0,b=0.0; c=0.0,1.0
+fies,mcnemar,M4-M5,0.0,1.0,b=0.0; c=0.0,1.0
+fies,wilcoxon_pliegues,M1-M2,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M1-M3,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M1-M4,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M1-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M2-M3,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M2-M4,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M2-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M3-M4,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M3-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,wilcoxon_pliegues,M4-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+fies,friedman,global,,,"rangos medios={'M1': np.float64(3.0), 'M2': np.float64(3.0), 'M3': np.float64(3.0), 'M4': np.float64(3.0), 'M5': np.float64(3.0)}",
+fies,nemenyi,M1-M2,,1.0,,1.0
+fies,nemenyi,M1-M3,,1.0,,1.0
+fies,nemenyi,M1-M4,,1.0,,1.0
+fies,nemenyi,M1-M5,,1.0,,1.0
+fies,nemenyi,M2-M3,,1.0,,1.0
+fies,nemenyi,M2-M4,,1.0,,1.0
+fies,nemenyi,M2-M5,,1.0,,1.0
+fies,nemenyi,M3-M4,,1.0,,1.0
+fies,nemenyi,M3-M5,,1.0,,1.0
+fies,nemenyi,M4-M5,,1.0,,1.0
+hibrido,delong_severa,M1-M2,0.0,1.0,AUC M1=1.000; M2=1.000,1.0
+hibrido,delong_severa,M1-M3,0.0,1.0,AUC M1=1.000; M3=1.000,1.0
+hibrido,delong_severa,M1-M4,0.0,1.0,AUC M1=1.000; M4=1.000,1.0
+hibrido,delong_severa,M1-M5,0.0,1.0,AUC M1=1.000; M5=1.000,1.0
+hibrido,delong_severa,M2-M3,0.0,1.0,AUC M2=1.000; M3=1.000,1.0
+hibrido,delong_severa,M2-M4,0.0,1.0,AUC M2=1.000; M4=1.000,1.0
+hibrido,delong_severa,M2-M5,0.0,1.0,AUC M2=1.000; M5=1.000,1.0
+hibrido,delong_severa,M3-M4,0.0,1.0,AUC M3=1.000; M4=1.000,1.0
+hibrido,delong_severa,M3-M5,0.0,1.0,AUC M3=1.000; M5=1.000,1.0
+hibrido,delong_severa,M4-M5,0.0,1.0,AUC M4=1.000; M5=1.000,1.0
+hibrido,mcnemar,M1-M2,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M1-M3,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M1-M4,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M1-M5,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M2-M3,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M2-M4,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M2-M5,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M3-M4,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M3-M5,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,mcnemar,M4-M5,0.0,1.0,b=0.0; c=0.0,1.0
+hibrido,wilcoxon_pliegues,M1-M2,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M1-M3,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M1-M4,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M1-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M2-M3,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M2-M4,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M2-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M3-M4,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M3-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,wilcoxon_pliegues,M4-M5,0.0,1.0,n=5 pliegues; p mínimo posible=0.0625,1.0
+hibrido,friedman,global,,,"rangos medios={'M1': np.float64(3.0), 'M2': np.float64(3.0), 'M3': np.float64(3.0), 'M4': np.float64(3.0), 'M5': np.float64(3.0)}",
+hibrido,nemenyi,M1-M2,,1.0,,1.0
+hibrido,nemenyi,M1-M3,,1.0,,1.0
+hibrido,nemenyi,M1-M4,,1.0,,1.0
+hibrido,nemenyi,M1-M5,,1.0,,1.0
+hibrido,nemenyi,M2-M3,,1.0,,1.0
+hibrido,nemenyi,M2-M4,,1.0,,1.0
+hibrido,nemenyi,M2-M5,,1.0,,1.0
+hibrido,nemenyi,M3-M4,,1.0,,1.0
+hibrido,nemenyi,M3-M5,,1.0,,1.0
+hibrido,nemenyi,M4-M5,,1.0,,1.0

@@ -1,0 +1,9 @@
+{
+ "id": "fies_M1",
+ "evaluado_en": "2026-11-10T16:47:53",
+ "usuario": "post_fase2_real",
+ "huella_particion": "f1815abeac5f7f304f55480cd3829ffdd9446b80b371da208d22bf44940b30e9",
+ "sha256_modelo": "a03dc4c0519b1b75d48b495639bc2724bae808dc1ec470b2f13d99e94990adba",
+ "n_prueba": 4809,
+ "umbral_severa_validacion": 1.2448395151860672e-22
+}

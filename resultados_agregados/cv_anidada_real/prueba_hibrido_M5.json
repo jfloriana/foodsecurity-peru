@@ -1,0 +1,9 @@
+{
+ "id": "hibrido_M5",
+ "evaluado_en": "2026-11-10T16:56:28",
+ "usuario": "post_fase2_real",
+ "huella_particion": "f1815abeac5f7f304f55480cd3829ffdd9446b80b371da208d22bf44940b30e9",
+ "sha256_modelo": "d08d1796de649f4306dab39ab12fd90afd719ee3dbff89fe64d4a55bad0bdaca",
+ "n_prueba": 4809,
+ "umbral_severa_validacion": 1.9765557226492092e-05
+}

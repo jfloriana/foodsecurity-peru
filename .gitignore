@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.lock
+datos_publicos/
+pgdata/
+artifacts_experimentos/
+logs/
+
+# Archivos temporales de Word
+~$*

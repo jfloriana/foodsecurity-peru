@@ -1,0 +1,60 @@
+{
+  "nombre": "cv_anidada_real",
+  "modo": "cv_anidada",
+  "ruta_datos": "<ruta_local>\\datos_publicos\\procesado\\enaho_analitico.parquet",
+  "hash_datos": "96bf57e1fd67c28380a16ad7435db7ffb5efd3ebae910a765939e2dd608c23b9",
+  "huella_particion": "f1815abeac5f7f304f55480cd3829ffdd9446b80b371da208d22bf44940b30e9",
+  "agrupar_por": "hogar_uid",
+  "escenario": [
+    "socio"
+  ],
+  "modelos": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "trials": 20,
+  "trials_final": 20,
+  "seed": 42,
+  "n_outer": 5,
+  "n_inner": 3,
+  "verificacion_particion": {
+    "n_total": 32065,
+    "exhaustiva": true,
+    "tamanos": {
+      "desarrollo": 22447,
+      "validacion": 4809,
+      "prueba": 4809
+    },
+    "proporciones": {
+      "desarrollo": 0.7,
+      "validacion": 0.15,
+      "prueba": 0.15
+    },
+    "cruces_hogar_uid": {
+      "desarrollo-validacion": 0,
+      "desarrollo-prueba": 0,
+      "validacion-prueba": 0
+    },
+    "cruces_hogar_uid_total": 0,
+    "cruces_conglome": {
+      "desarrollo-validacion": 3244,
+      "desarrollo-prueba": 3225,
+      "validacion-prueba": 1917
+    },
+    "cruces_conglome_total": 8386
+  },
+  "circularidad": "ADVERTENCIA DE CIRCULARIDAD FIES: fies_nivel se deriva de fies_q1..fies_q8. Los escenarios 'fies' e 'hibrido' usan esos ítems (o su suma) como predictores del propio objetivo: son tareas de RECONSTRUCCION/CLASIFICACION y su desempeño casi perfecto no mide capacidad predictiva. Solo el escenario 'socio' (sin variables FIES) constituye la PREDICCION real a partir de condiciones del hogar.",
+  "espacio_recortado": {
+    "M1": {
+      "penalty": {
+        "opciones": [
+          "l2"
+        ]
+      }
+    }
+  },
+  "creado_en": "2026-11-10T12:49:11"
+}

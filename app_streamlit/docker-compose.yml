@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-fsai}
+      POSTGRES_USER: ${POSTGRES_USER:-fsai_admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD en .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Scripts ejecutados solo al inicializar un volumen vacío (orden alfabético)
+      # (rutas relativas a app_streamlit/; el DDL principal vive en ../sql en la disposición V2)
+      - ../sql/01_ddl_fsai.sql:/docker-entrypoint-initdb.d/01_ddl_fsai.sql:ro
+      - ./sql/02_indices.sql:/docker-entrypoint-initdb.d/02_indices.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 20s
+    shm_size: 256mb
+    mem_limit: 2g
+    security_opt:
+      - no-new-privileges:true
+    # Sin "ports": PostgreSQL solo es accesible dentro de la red de Compose.
+
+  app:
+    build:
+      # Contexto = raíz del proyecto: así se copian foodsecurity_ai/fsai, foodsecurity_ai/train_pipeline.py y app_streamlit/app.
+      context: ..
+      dockerfile: app_streamlit/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      FSAI_DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-fsai_admin}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-fsai}
+      FSAI_USUARIOS: ${FSAI_USUARIOS:-}
+      FSAI_SESION_MIN: ${FSAI_SESION_MIN:-60}
+      FSAI_CACHE_TTL: ${FSAI_CACHE_TTL:-300}
+      FSAI_GEOJSON_DEPARTAMENTOS: ${FSAI_GEOJSON_DEPARTAMENTOS:-}
+      FSAI_GEOJSON_CLAVE: ${FSAI_GEOJSON_CLAVE:-NOMBDEP}
+    ports:
+      - "127.0.0.1:${FSAI_APP_PORT:-8501}:8501"
+    volumes:
+      - artifacts:/app/artifacts
+      - ./data:/app/data:ro
+      - ./geo:/app/geo:ro
+    mem_limit: 4g
+    cpus: 2.0
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  pgdata:
+  artifacts:

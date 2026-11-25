@@ -1,0 +1,42 @@
+# Versiones exactas del entorno donde se ejecutaron las pruebas de FoodSecurity AI V2 (Python 3.12.7, Windows 11).
+# Regenerado el 2026-11-16 con "python -m pip list --format=freeze", filtrado a los paquetes de requirements.txt
+# y a los importados directamente por foodsecurity_ai/ y app_streamlit/ (verificado con grep de "import ...").
+# NO se probó una instalación limpia con este archivo: reproduce versiones, no garantiza la resolución en otro sistema operativo.
+#
+# torch: la versión instalada es la variante CPU (2.13.0+cpu). Para obtenerla use el índice de PyTorch para CPU:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-lock.txt
+# (el sufijo +cpu lo aporta ese índice; en Linux/Docker pip resuelve la misma versión 2.13.0 desde él).
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# --- Aplicación y datos ---
+streamlit==1.41.1
+plotly==7.1.0
+SQLAlchemy==2.0.51
+psycopg2-binary==2.9.11
+pandas==2.2.3
+numpy==2.5.1
+scipy==1.18.0
+pyarrow==25.0.1
+openpyxl==3.1.5
+python-docx==1.2.0
+reportlab==5.0.0
+matplotlib==3.11.0
+pillow==11.3.0
+joblib==1.5.3
+
+# --- Modelado e interpretabilidad ---
+scikit-learn==1.9.0
+imbalanced-learn==0.14.2
+optuna==4.9.0
+catboost==1.2.10
+xgboost==3.4.1
+torch==2.13.0
+shap==0.54.1
+lime==0.2.0.1
+
+# --- Pruebas (python -m pytest foodsecurity_ai/tests -q) ---
+pytest==9.1.1
+
+# --- Solo scripts de verificación de informes (verificar_informe.py, verificar_inferencia_reporte.py) ---
+pymupdf==1.28.0
+pypdf==7.0.1

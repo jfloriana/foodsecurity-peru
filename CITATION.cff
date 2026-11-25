@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Si usa este software o sus resultados, cítelo como se indica a continuación."
+title: "foodsecurity-peru: modelos explicables de inseguridad alimentaria en hogares peruanos (ENAHO 2025)"
+type: software
+authors:
+  - family-names: "Florián Arévalo"
+    given-names: "Joel Anderson"
+    orcid: "https://orcid.org/0009-0002-8256-5779"
+    affiliation: "Escuela de Ingeniería de Sistemas, Universidad Nacional de Trujillo, Trujillo, Perú"
+  - family-names: "Gálvez Luna"
+    given-names: "Jason Anderson"
+    orcid: "https://orcid.org/0009-0002-0198-2168"
+    affiliation: "Escuela de Ingeniería de Sistemas, Universidad Nacional de Trujillo, Trujillo, Perú"
+license: MIT
+repository-code: "https://github.com/jfloriana/foodsecurity-peru"
+url: "https://github.com/jfloriana/foodsecurity-peru"
+date-released: "2026-11-25"
+keywords:
+  - inseguridad alimentaria
+  - FIES
+  - ENAHO
+  - aprendizaje automático
+  - Perú

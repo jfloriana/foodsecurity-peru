@@ -1,0 +1,9 @@
+{
+ "id": "fies_M4",
+ "evaluado_en": "2026-11-10T16:50:32",
+ "usuario": "post_fase2_real",
+ "huella_particion": "f1815abeac5f7f304f55480cd3829ffdd9446b80b371da208d22bf44940b30e9",
+ "sha256_modelo": "836a633fedf9740b2c2702078eb3ce9adb7436cc00bffed988215180fe8348ac",
+ "n_prueba": 4809,
+ "umbral_severa_validacion": 7.698617802403613e-05
+}

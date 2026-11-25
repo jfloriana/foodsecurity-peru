@@ -1,0 +1,26 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit>=1.37,<2
+plotly>=5.20
+SQLAlchemy>=2.0,<2.1
+psycopg2-binary>=2.9
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+imbalanced-learn>=0.12
+optuna>=3.5
+catboost>=1.2
+xgboost>=2.0
+torch>=2.2
+shap>=0.45
+lime>=0.2.0.1
+openpyxl>=3.1
+python-docx>=1.1
+reportlab>=4.0
+# --- Módulos por fases (Fase 0-7) ---
+matplotlib>=3.8          # figuras a 600 DPI (exportación de la Fase 5)
+pillow>=10               # verificación de DPI de las figuras
+joblib>=1.3              # modelos y ensambles
+pyarrow>=14              # lectura de .parquet
+# Opcionales (no instalados por defecto): pyreadstat>=1.2 para leer .sav de ENAHO; kaleido para exportar Plotly a imagen
+# (si no está, la Fase 5 usa Matplotlib). Local: pgserver para PostgreSQL embebido (ver despliegue_local).

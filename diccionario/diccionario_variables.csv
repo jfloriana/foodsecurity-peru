@@ -1,0 +1,51 @@
+﻿Variable,Código original,Unidad / valores,Tipo,Descripción,Por validar
+Conglomerado muestral,conglome,código,identificador,Código INEI del conglomerado (llave del hogar).,
+Número de vivienda,vivienda,código,identificador,Número de vivienda dentro del conglomerado (llave INEI).,
+Número de hogar,hogar,código,identificador,Número de hogar dentro de la vivienda (llave INEI).,
+Identificador anónimo del hogar,hogar_uid,código,identificador,Seudónimo SHA-256 de conglome|vivienda|hogar|sal. No permite reconocer al hogar.,
+Factor de expansión muestral,factor_expansion,hogares representados,peso,Peso de la encuesta (FACTOR07 de la ENAHO): número de hogares de la población que representa cada hogar de la muestra.,
+Año de la encuesta,anio,año,numérica,Año de la ENAHO (en el dataset real solo 2025).,
+Mes de la entrevista,mes,mes (1-12),numérica,Mes de la entrevista (variable MES). El FIES refiere al mes previo; hay estacionalidad.,
+Ubigeo,ubigeo,código de 6 dígitos,identificador,"Código de ubicación geográfica (departamento, provincia, distrito).",
+Provincia (código),provincia,código de 4 dígitos,identificador,Primeros 4 dígitos del ubigeo; las bases no traen el nombre.,
+Distrito (código),distrito,código de 6 dígitos,identificador,Código de ubigeo del distrito; las bases no traen el nombre.,
+Departamento,departamento,categoría (25),categórica,Departamento según los dos primeros dígitos del ubigeo (catálogo INEI de 25 departamentos; Callao = 07).,
+Área de residencia,area,Urbano / Rural,categórica,"Derivada del estrato de la ENAHO: estratos 1-5 = urbano (U), 6-8 = rural (R). Definición propia del proyecto.",
+Región natural,region_natural,costa / sierra / selva,categórica,"Derivada del dominio muestral (DOMINIO): aproximación, pues los dominios son áreas de muestreo.",
+Ítem FIES 1,fies_q1,sí = 1 / no = 0,binaria,"Ítem 1 de la escala FIES (variable P130_1 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Ítem FIES 2,fies_q2,sí = 1 / no = 0,binaria,"Ítem 2 de la escala FIES (variable P130_2 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Ítem FIES 3,fies_q3,sí = 1 / no = 0,binaria,"Ítem 3 de la escala FIES (variable P130_3 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Ítem FIES 4,fies_q4,sí = 1 / no = 0,binaria,"Ítem 4 de la escala FIES (variable P130_4 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Ítem FIES 5,fies_q5,sí = 1 / no = 0,binaria,"Ítem 5 de la escala FIES (variable P130_5 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Ítem FIES 6,fies_q6,sí = 1 / no = 0,binaria,"Ítem 6 de la escala FIES (variable P130_6 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Ítem FIES 7,fies_q7,sí = 1 / no = 0,binaria,"Ítem 7 de la escala FIES (variable P130_7 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Ítem FIES 8,fies_q8,sí = 1 / no = 0,binaria,"Ítem 8 de la escala FIES (variable P130_8 de la ENAHO): 1 = sí, 0 = no; «No sabe», «No responde» y blanco quedan como dato faltante. El texto exacto de la pregunta no está en el código ni en los datos del proyecto.",[POR VALIDAR] texto de la pregunta
+Puntaje crudo FIES,fies_raw_score,puntos (0-8),numérica,Suma de los 8 ítems FIES; solo existe si los 8 ítems fueron observados.,
+Severidad FIES (Rasch),fies_rasch_logit,logit,numérica,No disponible: requiere parámetros Rasch calibrados que no se fabricaron (100 % faltante).,[POR VALIDAR] parámetros Rasch
+Nivel de inseguridad alimentaria (FIES),fies_nivel,"0 = seguro, 1 = leve, 2 = moderada, 3 = severa",objetivo,"Objetivo multiclase. Cortes del puntaje crudo: leve >= 1, moderada >= 4, severa >= 7.",[POR VALIDAR] cortes del puntaje crudo (no es la clasificación oficial Rasch del INEI/FAO)
+Inseguridad alimentaria moderada o severa,ia_binaria,1 = sí / 0 = no,objetivo,1 si el nivel FIES es >= 2 (moderada o severa).,[POR VALIDAR] cortes del puntaje crudo
+Ingreso per cápita mensual,ingreso_pc,S/ por persona al mes,numérica,"Ingreso del hogar (INGHOG2D de la Sumaria, anual) dividido entre 12 y entre los miembros (MIEPERHO).",[POR VALIDAR] moneda y base de deflactación (el sufijo «D» de INGHOG2D indicaría deflactado por el INEI)
+Gasto per cápita mensual,gasto_pc,S/ por persona al mes,numérica,"Gasto del hogar (GASHOG2D de la Sumaria, anual) dividido entre 12 y entre los miembros (MIEPERHO).",[POR VALIDAR] moneda y base de deflactación
+Gasto en alimentos per cápita mensual,gasto_alim_pc,S/ por persona al mes,numérica,"Suma de los rubros del grupo 1 «Alimentos» de GASHOG2D (GRU11HD ... GRU14HD6), entre 12 y entre los miembros.",[POR VALIDAR] moneda y base de deflactación
+Proporción del gasto en alimentos,share_alimentario,proporción (0-1),numérica,gasto_alim_pc / gasto_pc (vacío si el gasto es 0).,
+Pobreza monetaria,pobreza_monetaria,1 = pobre / 0 = no pobre,binaria,Variable POBREZA de la Sumaria: categorías 1 y 2 (pobre extremo y pobre) = 1; categoría 3 = 0.,
+Miembros ocupados,n_ocupados,personas,numérica,Miembros del hogar con OCU500 = 1 (ocupado).,
+Informalidad laboral,informalidad,proporción de ocupados (0-1),numérica,No disponible: la base 500 publicada no trae la variable derivada; 100 % faltante y excluida de los predictores.,[POR VALIDAR] regla de informalidad
+Algún miembro desocupado,desempleo,1 = sí / 0 = no,binaria,1 si algún miembro tiene OCU500 = 2 o 3 (desocupado abierto u oculto).,
+Ocupados por miembro del hogar,dependencia_economica,razón (0-1),numérica,n_ocupados / n_miembros (nombre original del proyecto: «dependencia económica»; valores altos = más ocupados por miembro).,
+Nivel educativo del jefe de hogar,nivel_educ_jefe,escala 0-11,numérica,P301A - 1: 0 = sin nivel ... 11 = maestría/doctorado; el código 12 «Básica especial» queda como dato faltante.,
+Asistencia escolar de 6 a 17 años,asistencia_escolar,proporción (0-1),numérica,Proporción de miembros de 6 a 17 años que asisten (P307). Falta en ~61 % de los hogares (sin niños en esa edad).,
+Grupo educativo del jefe,grupo_educ_jefe,sin primaria / primaria / secundaria / superior,categórica,"Agrupación de nivel_educ_jefe: <2 sin primaria, 2-3 primaria, 4-5 secundaria, >=6 superior. Se usa en equidad.",
+Miembros del hogar,n_miembros,personas,numérica,"Residentes habituales (P204 = 1), excluidos parentesco 8 y 9; coincide con MIEPERHO en el 100 % de los hogares.",
+Menores de 5 años,n_menores5,personas,numérica,Miembros con edad < 5.,
+Menores de 18 años,n_menores18,personas,numérica,Miembros con edad < 18.,
+Adultos mayores (65 o más),n_adultos_mayores,personas,numérica,Miembros con edad >= 65.,
+Edad del jefe de hogar,edad_jefe,años,numérica,Edad del jefe de hogar (parentesco = 1).,
+Sexo del jefe de hogar,sexo_jefe,Hombre / Mujer,categórica,"Sexo del jefe de hogar (P207): H = hombre, M = mujer.",
+Grupo de edad del jefe,grupo_edad_jefe,<30 / 30-44 / 45-59 / 60+ años,categórica,"Agrupación de edad_jefe, usada para equidad.",
+Hogar con menores de 5 años,tiene_menor5,1 = sí / 0 = no,binaria,1 si n_menores5 > 0. Se usa para equidad.,
+Acceso a agua por red pública,agua_potable,1 = sí / 0 = no,binaria,1 si P110 = 1 o 2 (red pública). No usa la prueba de cloro. Definición propia del proyecto.,
+Acceso a saneamiento adecuado,saneamiento,1 = sí / 0 = no,binaria,"1 si P111A = 1-4 (desagüe de red pública, letrina con tratamiento, pozo séptico o biodigestor). Definición propia del proyecto.",
+Personas por habitación,hacinamiento,personas por habitación,numérica,n_miembros / P104 (habitaciones de la vivienda; se descartan valores 0 o >= 99).,[POR VALIDAR] interpretación de P104 en el diccionario ENAHO
+Tipo de vivienda,tipo_vivienda,categoría (código INEI P101),categórica,Código de la pregunta P101 de la ENAHO.,[POR VALIDAR] significado de cada código
+Material de paredes de la vivienda,material_vivienda,categoría (código INEI P102),categórica,Código de la pregunta P102 (paredes exteriores).,[POR VALIDAR] significado de cada código

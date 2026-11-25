@@ -1,0 +1,8 @@
+.git
+referencia_v1
+odd
+docs
+**/__pycache__
+**/.pytest_cache
+*.docx
+informe

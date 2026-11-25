@@ -1,0 +1,196 @@
+{
+  "descripcion": "Indicadores a nivel departamento derivados de fuentes públicas; ver docs/FUENTES_ADICIONALES.md",
+  "clave": "cod_departamento",
+  "indicadores": {
+    "terr_desnutricion_cronica_pct": {
+      "fuente": "ENDES_2024_RECH6",
+      "anio": "2024",
+      "unidad": "%",
+      "descripcion": "Desnutrición crónica (HC70 < -200) en niños 0-59 m con dato válido, ponderado HV005"
+    },
+    "terr_anemia_ninos_pct": {
+      "fuente": "ENDES_2024_RECH6",
+      "anio": "2024",
+      "unidad": "%",
+      "descripcion": "Anemia en niños (HC57 1-3 sobre 1-4, ajustada por altitud), ponderado HV005"
+    },
+    "terr_anemia_mujeres_pct": {
+      "fuente": "ENDES_2024_RECH5",
+      "anio": "2024",
+      "unidad": "%",
+      "descripcion": "Anemia en mujeres 15-49 (HA57 1-3 sobre 1-4), ponderado HV005"
+    },
+    "terr_hogares_programa_social_pct": {
+      "fuente": "ENDES_2024_PS_HOGAR",
+      "anio": "2024",
+      "unidad": "%",
+      "descripcion": "Hogares con algún programa social (Beca 18, Trabaja Perú, Juntos, Pensión 65, Vaso de Leche, Comedor, Cuna Más)"
+    },
+    "terr_hogares_juntos_pct": {
+      "fuente": "ENDES_2024_PS_HOGAR",
+      "anio": "2024",
+      "unidad": "%",
+      "descripcion": "Hogares beneficiarios de Juntos (QH95)"
+    },
+    "terr_hogares_pension65_pct": {
+      "fuente": "ENDES_2024_PS_HOGAR",
+      "anio": "2024",
+      "unidad": "%",
+      "descripcion": "Hogares con beneficiario de Pensión 65 (QH99)"
+    },
+    "terr_hogares_vaso_leche_pct": {
+      "fuente": "ENDES_2024_PS_HOGAR",
+      "anio": "2024",
+      "unidad": "%",
+      "descripcion": "Hogares con beneficiario del Vaso de Leche (QH101)"
+    },
+    "terr_mpi_indice": {
+      "fuente": "OPHI_MPI_HDX",
+      "anio": "2023",
+      "unidad": "índice 0-1",
+      "descripcion": "MPI (OPHI) por departamento, ENDES 2023"
+    },
+    "terr_mpi_incidencia_pct": {
+      "fuente": "OPHI_MPI_HDX",
+      "anio": "2023",
+      "unidad": "%",
+      "descripcion": "Incidencia de pobreza multidimensional (Headcount Ratio)"
+    },
+    "terr_mpi_intensidad_pct": {
+      "fuente": "OPHI_MPI_HDX",
+      "anio": "2023",
+      "unidad": "%",
+      "descripcion": "Intensidad de las privaciones entre los pobres multidimensionales"
+    },
+    "terr_precip_anom_pct": {
+      "fuente": "OPENMETEO_ERA5",
+      "anio": "2025",
+      "unidad": "%",
+      "descripcion": "(P12m - media 2015-2024) / media 2015-2024 * 100, en el centroide del departamento"
+    },
+    "terr_precip_anom_z": {
+      "fuente": "OPENMETEO_ERA5",
+      "anio": "2025",
+      "unidad": "desv. est.",
+      "descripcion": "(P12m - media 2015-2024) / DE 2015-2024 (anomalía estandarizada)"
+    },
+    "terr_oni_mes": {
+      "fuente": "NOAA_CPC_ONI",
+      "anio": "por mes de encuesta",
+      "unidad": "°C",
+      "descripcion": "ONI (anomalía Niño 3.4, trimestre móvil centrado en el mes), unido por (anio, mes)"
+    }
+  },
+  "informe": {
+    "fuentes": {
+      "endes_talla_anemia": {
+        "estado": "ok",
+        "departamentos": 25
+      },
+      "endes_programas_sociales": {
+        "estado": "ok",
+        "departamentos": 25
+      },
+      "ophi_mpi": {
+        "estado": "ok",
+        "departamentos": 25
+      },
+      "openmeteo_era5_precipitacion": {
+        "estado": "ok",
+        "departamentos": 25
+      },
+      "noaa_oni": {
+        "estado": "ok",
+        "filas": 141
+      }
+    },
+    "columnas_indicador": [
+      "terr_desnutricion_cronica_pct",
+      "terr_anemia_ninos_pct",
+      "terr_anemia_mujeres_pct",
+      "terr_hogares_programa_social_pct",
+      "terr_hogares_juntos_pct",
+      "terr_hogares_pension65_pct",
+      "terr_hogares_vaso_leche_pct",
+      "terr_mpi_indice",
+      "terr_mpi_incidencia_pct",
+      "terr_mpi_intensidad_pct",
+      "terr_precip_anom_pct",
+      "terr_precip_anom_z"
+    ],
+    "cobertura_departamentos": {
+      "terr_desnutricion_cronica_pct": 25,
+      "terr_anemia_ninos_pct": 25,
+      "terr_anemia_mujeres_pct": 25,
+      "terr_hogares_programa_social_pct": 25,
+      "terr_hogares_juntos_pct": 25,
+      "terr_hogares_pension65_pct": 25,
+      "terr_hogares_vaso_leche_pct": 25,
+      "terr_mpi_indice": 25,
+      "terr_mpi_incidencia_pct": 25,
+      "terr_mpi_intensidad_pct": 25,
+      "terr_precip_anom_pct": 25,
+      "terr_precip_anom_z": 25
+    },
+    "rangos": {
+      "terr_desnutricion_cronica_pct": [
+        2.6361573106634824,
+        24.025907462436596
+      ],
+      "terr_anemia_ninos_pct": [
+        24.91223290247409,
+        68.25484563933452
+      ],
+      "terr_anemia_mujeres_pct": [
+        16.605018244343455,
+        40.2377497352723
+      ],
+      "terr_hogares_programa_social_pct": [
+        9.625913208894005,
+        55.21635421956873
+      ],
+      "terr_hogares_juntos_pct": [
+        0.8729444734711455,
+        23.960555835688567
+      ],
+      "terr_hogares_pension65_pct": [
+        4.998733462639022,
+        67.73552000126712
+      ],
+      "terr_hogares_vaso_leche_pct": [
+        4.527602854533227,
+        25.69577655632018
+      ],
+      "terr_mpi_indice": [
+        0.0024,
+        0.0919
+      ],
+      "terr_mpi_incidencia_pct": [
+        0.6294,
+        21.5008
+      ],
+      "terr_mpi_intensidad_pct": [
+        35.3313,
+        42.7336
+      ],
+      "terr_precip_anom_pct": [
+        -43.09252217997464,
+        42.264311555650146
+      ],
+      "terr_precip_anom_z": [
+        -0.6324666726217931,
+        3.313492098152629
+      ]
+    },
+    "diagnostico_nasa_power": {
+      "mediana_anom_pct_power": 33.46154249242799,
+      "mediana_anom_pct_era5": 12.014646567907656,
+      "spearman": -0.011925370484110558,
+      "decision": "NASA POWER descartada para el rasgo por salto en 2025 (ver docstring); se reporta solo como diagnóstico"
+    },
+    "anio_enaho": 2025,
+    "ventana_precipitacion": "12 meses de 2025 vs media anual 2015-2024"
+  },
+  "aviso_temporal": "ENDES 2024 y MPI (ENDES 2023) NO son de 2025 (año de la ENAHO); precipitación y ONI sí corresponden a 2025.",
+  "aviso_fuga": "Ningún indicador se deriva de ENAHO/FIES ni del objetivo (verificar_sin_fuga)."
+}

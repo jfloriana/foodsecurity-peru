@@ -1,0 +1,19 @@
+# Configuración de interfaz de FoodSecurity AI (todo local; sin recursos externos).
+# Solo tema claro: con base = "light" Streamlit no sigue la preferencia oscura del sistema/navegador.
+[theme]
+base = "light"
+primaryColor = "#0B5C5E"
+backgroundColor = "#F2EFE7"
+secondaryBackgroundColor = "#E8E4D8"
+textColor = "#1D2A33"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = false
+
+[browser]
+gatherUsageStats = false
+
+[server]
+enableXsrfProtection = true

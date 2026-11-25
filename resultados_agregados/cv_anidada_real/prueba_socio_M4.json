@@ -1,0 +1,9 @@
+{
+ "id": "socio_M4",
+ "evaluado_en": "2026-11-10T15:45:58",
+ "usuario": "post_fase2_real",
+ "huella_particion": "f1815abeac5f7f304f55480cd3829ffdd9446b80b371da208d22bf44940b30e9",
+ "sha256_modelo": "4981b1a9056f11219a3baaa994203d82d4ad3d97927eb51ef991775dff549747",
+ "n_prueba": 4809,
+ "umbral_severa_validacion": 0.2803981880579597
+}
